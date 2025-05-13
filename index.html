@@ -8,6 +8,46 @@
         <script src="script.js" defer></script>
     </head>
     <body>
-        <h1>Calculator JS</h1>
+        <h1 id="title">Calculator JS</h1>
+        <div id="app">
+            <div id="container">
+                <div id="display">
+                    <div id="input"></div>
+                    <div id="output"></div>
+                </div>
+                <div id="button-layout">
+                    <div>
+                        <button data-key='clear' class="btn-action"><span>AC</span></button>
+                        <button data-key='brackets' class="btn-action"><span>()</span></button>
+                        <button data-key='%' class="btn-action"><span>%</span></button>
+                        <button data-key='/' class="btn-operator"><span>÷</span></button>
+                    </div>
+                    <div>
+                        <button data-key='7' class="btn-num"><span>7</span></button>
+                        <button data-key='8' class="btn-num"><span>8</span></button>
+                        <button data-key='9' class="btn-num"><span>9</span></button>
+                        <button data-key='*' class="btn-operator"><span>x</span></button>
+                    </div>
+                    <div>
+                        <button data-key='4' class="btn-num"><span>4</span></button>
+                        <button data-key='5' class="btn-num"><span>5</span></button>
+                        <button data-key='6' class="btn-num"><span>6</span></button>
+                        <button data-key='-' class="btn-operator"><span>-</span></button>
+                    </div>
+                    <div>
+                        <button data-key='1' class="btn-num"><span>1</span></button>
+                        <button data-key='2' class="btn-num"><span>2</span></button>
+                        <button data-key='3' class="btn-num"><span>3</span></button>
+                        <button data-key='+' class="btn-operator"><span>+</span></button>
+                    </div>
+                    <div>
+                        <button data-key='delete' class="btn-action"><span>DEL</span></button>
+                        <button data-key='0' class="btn-num"><span>0</span></button>
+                        <button data-key='.' class="btn-num"><span>.</span></button>
+                        <button data-key='=' class="btn-operator"><span>=</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

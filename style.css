@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#container {
+    background-color: lightblue;
+    width: 100%;
+    max-width: 375px;
+    min-height: 640px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+#display {
+    min-height: 200px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: antiquewhite;
+    text-align: right;
+    flex: 1 1 0%;
+}
+
+#display #input {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+#display #output {
+    font-size: 3rem;
+    font-weight: 700;
+    width: 100%;
+    max-width: 100%;
+    overflow: auto;
+}
+
+#display .operator {
+    color: red;
+}
+
+#display .brackets,
+#display .percent {
+    color: lightseagreen;
+}
+
+#button-layout {
+    background-color: aqua;
+    padding: 1.5rem;
+	border-radius: 1.5rem 1.5rem 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#button-layout button {
+    background-color: #04AA6D; /* Green */
+    border: none;
+    width: 20%;
+    padding: 1.5rem;
+    margin: 0.1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#button-layout button span {
+	font-size: 1.1rem;
+	font-weight: 700;
+}
+
+#button-layout button:hover {
+    box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-operator {
+    color: red;
+}
+
+.btn-action {
+    color: lightblue;
+}
